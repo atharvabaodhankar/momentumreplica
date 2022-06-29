@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico" />
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- http://momentum-template.webflow.io -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/79f75f2740.js" crossorigin="anonymous"></script>
+    <title>Momentum</title>
+</head>
+
+<body>
+    <div class="maincontainer">
+        <nav class="navBar">
+            <img src="https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5af4a442dbb1e30d142d8f6c_logo-white.png"
+                alt="" />
+
+            <ul>
+                <i class="fa-solid fa-xmark" onclick="removeNav()"></i>
+
+                <li><a href="#">About</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">How to Use</a></li>
+                <li><a href="#">Download</a></li>
+            </ul>
+            <i class="fa fa-bars" onclick="showNav()"></i>
+        </nav>
+        <div class="intro">
+            <div class="into_text">
+                <p>Momentum</p>
+                <p>
+                    Launch your product — and savor the
+                    <br />
+                    momentum.
+                </p>
+
+                <button>Get the App</button>
+            </div>
+
+            <div class="intoimg">
+                <img src="https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5b10d0ee7f483cdf4e9ca8f8_img-top-p-500.png"
+                    alt="" sizes="(max-width: 479px) 80vw, (max-width: 991px) 70vw, 100vw" />
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function showNav() {
+        const navBar = document.querySelector(".navBar");
+
+        navBar.classList.toggle("activeNav");
+    }
+    function removeNav() {
+        const navBar = document.querySelector(".navBar");
+
+        navBar.classList.remove("activeNav");
+    }
+</script>
+
+</html>

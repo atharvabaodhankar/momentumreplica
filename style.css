@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Gothic+A1:wght@200&family=Lobster&family=Macondo&family=Poppins:wght@300&family=Roboto:wght@700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Gothic A1", sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+    margin: 5rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    transition: all 0.5s;
+}
+
+nav ul li {
+    margin: 0 2rem;
+}
+
+nav ul li a {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 1rem;
+}
+
+.maincontainer {
+    height: 100vh;
+    width: 100%;
+    background-color: #cf0063;
+    background-image: -webkit-linear-gradient(315deg, #dd1173, #350e47);
+    background-image: linear-gradient(135deg, #dd1173, #350e47);
+}
+
+nav img {
+    margin: 0 7%;
+}
+
+.fa-bars {
+    font-size: 3.3rem;
+    color: #fff;
+    margin: 0 5rem 0 0;
+    display: none;
+}
+
+.fa-xmark {
+    display: none;
+    font-size: 4rem;
+    padding: 1rem 4rem;
+    color: #ffffff;
+    float: right;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intoimg img {
+    max-width: 70rem;
+    min-width: 50rem;
+}
+
+.into_text {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-left: 10rem;
+    width: 60rem;
+}
+
+.into_text p:nth-child(1) {
+    font-size: 7rem;
+    font-weight: 900;
+}
+
+.into_text p:nth-last-child(2) {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.into_text button {
+    background-color: #fc0a7e;
+    padding: 2rem 1rem;
+    color: #fff;
+    font-weight: 700;
+    width: 18rem;
+    font-size: 1.5rem;
+    border: none;
+    transition: all 0.5s;
+    border-radius: 0.5rem;
+    margin-top: 3rem;
+}
+
+.into_text button:hover {
+    color: grey;
+    background: #fff;
+}
+
+@media screen and (max-width: 940px) {
+    nav ul {
+        display: block;
+        position: fixed;
+        background: #1b1b1bef;
+        border-radius: 0rem 0rem 20rem 0rem;
+        width: 70%;
+        height: 100vh;
+        top: 2rem;
+        left: -100%;
+        opacity: 0;
+
+    }
+
+    nav ul li {
+        margin: 5rem 2rem;
+        padding: 2rem 4rem;
+    }
+
+    nav ul li a {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .fa-bars,
+    .fa-xmark {
+        display: block;
+        cursor: pointer;
+    }
+
+    .activeNav ul {
+        left: 0;
+        opacity: 1;
+    }
+
+    .intro {
+        flex-direction: column;
+    }
+
+    .inoimg {
+        align-self: center;
+    }
+
+    .into_text {
+        margin-left: -2rem;
+    }
+}
